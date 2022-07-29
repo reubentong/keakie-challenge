@@ -2,6 +2,7 @@ package shows
 
 import (
 	"context"
+	"fmt"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 )
@@ -27,7 +28,7 @@ func (s *service) GetShow(ctx context.Context, slug string) (show ShowResponse, 
 	show, err = s.repository.GetShow(slug)
 	if err != nil {
 		level.Error(logger).Log("err", err)
-		return ShowResponse{}, err
+		return ShowResponse{}, fmt.Errorf("error from repository: %v", err)
 	}
-	return show, nil
+	return show, err
 }

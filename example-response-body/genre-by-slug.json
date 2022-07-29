@@ -1,0 +1,13 @@
+{
+  "bpm_range": "70-160",
+  "description": "A more experimental take on rap, often characterised by genre-blending, unique production and alternative arrangements.",
+  "id": "25f94646-d0b7-41fe-89fe-ec62c0463e5a",
+  "is_parent": false,
+  "key_instruments": "",
+  "key_location": "",
+  "parent_id": "55bce497-7c9a-47c6-a600-c0cdc5db687e",
+  "release_date": "2020-02-04T20:28:33.693Z",
+  "short_description": "Alternative, experimental take on rap",
+  "slug": "alt-rap",
+  "title": "Alt. Rap"
+}

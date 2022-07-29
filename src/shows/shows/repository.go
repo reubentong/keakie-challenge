@@ -2,6 +2,7 @@ package shows
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 	"io/ioutil"
@@ -27,19 +28,24 @@ func (r repository) GetShow(slug string) (show ShowResponse, err error) {
 	var genres []Genre
 	for _, element := range r.db {
 		if element.Slug == slug {
+			found = true
 			for _, genre := range element.Genres {
 				resp, err := http.Get("http://localhost:8080/genres/" + genre)
 				if err != nil {
 					level.Error(r.logger).Log("err", "error retrieving genres")
+					return ShowResponse{}, fmt.Errorf("error from repository: %v", err)
 				}
 				body, err := ioutil.ReadAll(resp.Body)
 				if err != nil {
 					level.Error(r.logger).Log("err", "error reading body")
+					return ShowResponse{}, fmt.Errorf("error from repository: %v", err)
+
 				}
 				genreResponse := Genre{}
 				err = json.Unmarshal(body, &genreResponse)
 				if err != nil {
 					level.Error(r.logger).Log("err", "error unmarshalling body")
+					return ShowResponse{}, fmt.Errorf("error from repository: %v", err)
 				}
 
 				genres = append(genres, genreResponse)
@@ -63,14 +69,15 @@ func (r repository) GetShow(slug string) (show ShowResponse, err error) {
 				Slug:        element.Slug,
 				Title:       element.Title,
 			}
-			found = true
-			return show, nil
+			return
 		}
 	}
 
 	if found == false {
-		level.Error(r.logger).Log("err", "slug does not exist")
-		return ShowResponse{}, err
+		err := "slug does not exist"
+		level.Error(r.logger).Log("err", err)
+		return ShowResponse{}, fmt.Errorf(err)
 	}
-	return
+
+	return show, err
 }

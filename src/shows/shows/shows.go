@@ -5,7 +5,7 @@ import (
 )
 
 type Show struct {
-	Assets      Asset     `json:"asset"`
+	Assets      Asset     `json:"assets"`
 	Hosts       []string  `json:"hosts"`
 	Description string    `json:"description"`
 	Format      string    `json:"format"`
@@ -20,7 +20,7 @@ type Show struct {
 }
 
 type ShowResponse struct {
-	Assets      Asset     `json:"asset"`
+	Assets      Asset     `json:"assets"`
 	Hosts       []string  `json:"hosts"`
 	Description string    `json:"description"`
 	Format      string    `json:"format"`

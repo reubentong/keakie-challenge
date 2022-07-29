@@ -1,0 +1,38 @@
+{
+  "assets": {
+    "hero_l": {
+      "jpg": "https://assets.keakie.com/d20cd157-4efd-44fe-86df-c72d0d8c226b/hero_l.jpg",
+      "webp": ""
+    }
+  },
+  "hosts": [
+    "Records_zaman"
+  ],
+  "description": "Records_zaman is a record store and specialist DJ based in Agadir, Morocco, sharing songs and mixes from North Africa and the Middle East.",
+  "format": "mix",
+  "genres": [
+    {
+      "bpm_range": "70-120",
+      "description": "Emerging from the Arabic diaspora in France in the 90s & influenced by US hip hop beats, a young, talented and committed scene has sprung up across Egypt, Palestine and Iraq.",
+      "id": "5d9a0ce8-6d5f-4200-9c0e-3b00e765976c",
+      "is_parent": false,
+      "key_instruments": "",
+      "key_location": "Bethlehem, Cairo",
+      "parent_id": "2b6db63b-e446-439e-ae38-010f40274f95",
+      "release_date": "2022-04-11T17:49:36Z",
+      "short_description": "The beats you'd expect, from places you wouldn't.",
+      "slug": "arabic-hip-hop",
+      "title": "Arabic Hip Hop"
+    }
+  ],
+  "id": "21e11201-4187-47b6-ab77-36d888fbceaa",
+  "is_approved": true,
+  "node_type": "ShowPreview",
+  "owners": [
+    "027062b9-f537-4055-8550-07c2328cd7e4",
+    "21e11201-4187-47b6-ab77-36d888fbceaa"
+  ],
+  "release_date": "2022-05-15T05:00:00Z",
+  "slug": "records-zaman-radio",
+  "title": "Records_zaman Radio"
+}

@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0e825545-c32e-4f9e-82de-cfbf669053ac",
+		"name": "Keakie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18783776"
+	},
+	"item": [
+		{
+			"name": "Get Genre",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/shows/stranger-in-gulf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"shows",
+						"stranger-in-gulf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
