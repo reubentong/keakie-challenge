@@ -5,7 +5,7 @@ To run:
 - cd into either of the shows/genre folders
 - go run main.go
 
-To test:
+To test manually:
 - in public directory I've added a postman collection 
 which can be used to test or make request from another method, e.g. curl
 
@@ -16,6 +16,7 @@ To improve:
 - Add docker files etc for deployment to aws on push to main
 - Potentially add air.conf/Makefile to improve development with env
 / have an auto building server which doesnt need closing
+- add unit tests
 
 TRACKING TIMELINE 
 - started fri @ 8.25am for 35 mins => 9.00
@@ -27,8 +28,8 @@ Genre working needs debugging, e.g. the way the json is handled.
 added found bool to verify slug
 shows "working" @13:10 without test case for incorrect slug
 1.5 hrs left to tidy up
-- back @ 13:50 until 14:30 for 40 mins
+- back @ 13:50 until 15:00 for 40 mins
 Tidied up errors and basic logging. 
 Wrote Readme run, test and improvements 
-
-time spent: 3 hrs 20 mins
+Began writing some unit tests but ran out of time really
+time spent: 3 hrs 50 mins
