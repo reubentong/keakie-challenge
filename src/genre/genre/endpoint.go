@@ -18,17 +18,19 @@ func makeGetGenreEndpoint(s Service) endpoint.Endpoint {
 		req := request.(GetGenreRequest)
 		genre, err := s.GetGenre(ctx, req.Slug)
 		return GetGenreResponse{
-			BpmRange:         genre.BpmRange,
-			Description:      genre.Description,
-			Id:               genre.Id,
-			IsParent:         genre.IsParent,
-			KeyInstruments:   genre.KeyInstruments,
-			KeyLocation:      genre.KeyLocation,
-			ParentId:         genre.ParentId,
-			ReleaseDate:      genre.ReleaseDate,
-			ShortDescription: genre.ShortDescription,
-			Slug:             genre.Slug,
-			Title:            genre.Title,
+			Genre{
+				BpmRange:         genre.BpmRange,
+				Description:      genre.Description,
+				Id:               genre.Id,
+				IsParent:         genre.IsParent,
+				KeyInstruments:   genre.KeyInstruments,
+				KeyLocation:      genre.KeyLocation,
+				ParentId:         genre.ParentId,
+				ReleaseDate:      genre.ReleaseDate,
+				ShortDescription: genre.ShortDescription,
+				Slug:             genre.Slug,
+				Title:            genre.Title,
+			},
 		}, err
 	}
 }

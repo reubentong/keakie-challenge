@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	"github.com/username/reubentong/genre"
+	"github.com/reubentong/genre/genre"
 	"io/ioutil"
 	"net/http"
 	"os"
