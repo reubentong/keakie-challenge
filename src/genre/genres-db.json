@@ -1,0 +1,66 @@
+[
+  {
+    "bpm_range": "70-160",
+    "description": "A more experimental take on rap, often characterised by genre-blending, unique production and alternative arrangements.",
+    "id": "25f94646-d0b7-41fe-89fe-ec62c0463e5a",
+    "is_parent": false,
+    "key_instruments": "",
+    "key_location": "",
+    "parent_id": "55bce497-7c9a-47c6-a600-c0cdc5db687e",
+    "release_date": "2020-02-04T20:28:33.693Z",
+    "short_description": "Alternative, experimental take on rap",
+    "slug": "alt-rap",
+    "title": "Alt. Rap"
+  },
+  {
+    "bpm_range": "",
+    "description": "Spanning Algerian Rai, Egyptian Tarab, Palestinian Rap and the emerging electronic scene, the MENA region represents a cultural crossroads where tradition and innovation meet.",
+    "id": "2b6db63b-e446-439e-ae38-010f40274f95",
+    "is_parent": true,
+    "key_instruments": "",
+    "key_location": "",
+    "release_date": "2022-04-04T16:28:37Z",
+    "short_description": "The full spectrum of sounds from Rabat to Tehran.",
+    "slug": "middle-east-and-north-africa",
+    "title": "Middle East & North Africa"
+  },
+  {
+    "bpm_range": "",
+    "description": "Originating in the London club scene of the mid-'80s, acid jazz offers a soulful, funk and disco-infused take on classic jazz tropes and progressions.",
+    "id": "6c7633ea-ccb1-4457-9be5-6dfd7ce423e8",
+    "is_parent": false,
+    "key_instruments": "Roland TB-303 Saxophone Piano",
+    "key_location": "London",
+    "parent_id": "2646a38d-470a-4eb7-aa47-f3559b6765ef",
+    "release_date": "2020-02-04T20:28:34.327Z",
+    "short_description": "Soul, funk and disco-infused take on classic jazz",
+    "slug": "acid-jazz",
+    "title": "Acid Jazz"
+  },
+  {
+    "bpm_range": "70-120",
+    "description": "Emerging from the Arabic diaspora in France in the 90s & influenced by US hip hop beats, a young, talented and committed scene has sprung up across Egypt, Palestine and Iraq.",
+    "id": "5d9a0ce8-6d5f-4200-9c0e-3b00e765976c",
+    "is_parent": false,
+    "key_instruments": "",
+    "key_location": "Bethlehem, Cairo",
+    "parent_id": "2b6db63b-e446-439e-ae38-010f40274f95",
+    "release_date": "2022-04-11T17:49:36Z",
+    "short_description": "The beats you'd expect, from places you wouldn't.",
+    "slug": "arabic-hip-hop",
+    "title": "Arabic Hip Hop"
+  },
+  {
+    "bpm_range": "130-140",
+    "description": "A form of dance music that adds influences from funk and hip hop to heavy basslines and broken beats. Created out of crate-digger culture, with a focus on forgotten and rare gems.",
+    "id": "c2b1c966-a10d-4ea0-8ea1-dee392d6e47d",
+    "is_parent": false,
+    "key_instruments": "Synthesizers, Drum machines",
+    "key_location": "USA",
+    "parent_id": "00000000-0000-0000-0000-000000000000",
+    "release_date": "2020-02-04T20:28:34.158Z",
+    "short_description": "Dance rhythms with funk and hip hop influences",
+    "slug": "electro",
+    "title": "Electro"
+  }
+]
